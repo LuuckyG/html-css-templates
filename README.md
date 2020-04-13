@@ -1,4 +1,4 @@
-# html-css-templates
+# HTML & CSS Templates
 
 In this repository I will list my progression on HTML and CSS.
 I will do so by creating responsive websites and elements of websites using pure HTML and CSS.
