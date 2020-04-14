@@ -9,6 +9,18 @@
   background-color: white;
 }
 
+.inlog {
+  float: right;
+  margin: 5px;
+  position: relative;
+}
+
+.inlog a:hover {
+  background-color: inherit;
+}
+
+#register {margin-right: 2%;}
+
 .container {
   width: 100%;
   height: 1500px;
@@ -18,6 +30,7 @@
 .main-content {
   width: auto;
   height: inherit;
+  margin-left: auto;
   float: left;
   display: block;
   background-color: white;
