@@ -18,9 +18,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a:hover {
-  background-color: #ddd;
-}
+a:hover { background-color: #ddd;}
 
 .navbar .active {
   color: white;
