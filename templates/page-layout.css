@@ -28,7 +28,7 @@
 }
 
 .main-content {
-  width: 100%;
+  width: 90%;
   height: inherit;
   margin-left: auto;
   float: left;
@@ -37,18 +37,30 @@
 }
 
 .main-text {
+  width: 100%;
+  height: inherit;
   margin: auto;
-  padding: 10px 10px;
 }
 
 .wrapper {
-  display: table;
-  margin-top: 50%;
-  width: 100%;
+  width: inherit;
+  height: inherit;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
 }
 
-.main-iframe {
-  width: 100%;
+.iframe-content {
+  width: inherit;
+  height: inherit;
+  margin: inherit;
+  overflow: hidden;
+}
+
+#main-iframe {
+  width: inherit;
+  height: inherit;
+  border: none;
 }
 
 .footer {
