@@ -28,7 +28,7 @@
 }
 
 .main-content {
-  width: auto;
+  width: 100%;
   height: inherit;
   margin-left: auto;
   float: left;
@@ -39,6 +39,16 @@
 .main-text {
   margin: auto;
   padding: 10px 10px;
+}
+
+.wrapper {
+  display: table;
+  margin-top: 50%;
+  width: 100%;
+}
+
+.main-iframe {
+  width: 100%;
 }
 
 .footer {
