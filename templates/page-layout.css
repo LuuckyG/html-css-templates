@@ -1,6 +1,7 @@
 .body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 .header {
@@ -37,17 +38,15 @@
 }
 
 .main-text {
-  width: 100%;
+  width: inherit;
   height: inherit;
-  margin: auto;
 }
 
 .wrapper {
   width: inherit;
   height: inherit;
-  margin-left: 10px;
-  margin-right: 10px;
   overflow: hidden;
+  padding: 10px;
 }
 
 .iframe-content {
@@ -55,6 +54,7 @@
   height: inherit;
   margin: inherit;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 #main-iframe {
