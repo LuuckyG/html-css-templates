@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Flexbox responsive layout</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Luuk Geelen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      * {box-sizing: border-box;}
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      .header {
+        text-align: center;
+        padding: 30px;
+        background-color: #1f1f1f;
+        color: white;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: lightskyblue;
+        padding: 10px 20px;
+        align-content: center;
+        text-align: center;
+      }
+
+      .left-side {
+        display: flex;
+      }
+
+      .navbar-item a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+      }
+
+      .search-box > input[text] {
+        padding-left: 10px;
+        padding-right: 20px;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+      }
+      
+      .one-third {
+        flex: 33.333333%;
+        padding: 20px;
+        background-color: lightslategrey;
+      }
+
+      .two-third {
+        flex: 66.666666%;
+        padding: 20px;
+      }
+
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background-color: lightgrey;
+      }
+
+      @media screen and (max-width: 600px) {
+        .navbar, .left-side, .row {
+          flex-direction: column;
+        }
+      }
+
+    </style>
+
+  </head>
+        
+  <body>
+      <div class='header'>
+        <h1>My Website</h1>
+        <p>With <b>responsive</b> design</p>
+      </div>
+
+      <div class="navbar">
+        <div class="left-side">
+          <div class="navbar-item navbar-active">
+            <a href="#">Home</a>
+          </div>
+
+          <div class="navbar-item">
+            <a href="#">Blog</a>
+          </div>
+
+          <div class="navbar-item">
+            <a href="#">About</a>
+          </div>
+
+          <div class="navbar-item">
+            <a href="#">Shop</a>
+          </div>
+        </div>
+        
+        <div class="search-box">
+          <i class="fa fa-fw fa-search" id="search-icon"></i>
+          <input type="text" placeholder="Search here..">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="one-third content-wrapper">
+          <div class="content">
+            SIDEBOX
+          </div>  
+          
+        </div>
+
+        <div class="two-third content-wrapper">
+          <div class="content">
+            THE CONTENT
+          </div>  
+        </div>
+
+      </div>
+
+    <div class='footer'>
+      <h2>FOOTER</h2>
+    </div>
+
+
+  </body>
+</html>
